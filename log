@@ -64,3 +64,24 @@ list.c:68:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 f14b8ca
+Fri Mar 27 01:00:19 AM UTC 2026: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:62:48: error: expected ‘;’ before ‘void’
+   62 |             list->current = list->current->next
+      |                                                ^
+      |                                                ;
+   63 |             void* dato = list->current->data;
+      |             ~~~~                                
+list.c:64:20: error: ‘dato’ undeclared (first use in this function)
+   64 |             return dato;
+      |                    ^~~~
+list.c:64:20: note: each undeclared identifier is reported only once for each function it appears in
+list.c:69:1: error: control reaches end of non-void function [-Werror=return-type]
+   69 | }
+      | ^
+cc1: all warnings being treated as errors
+8934e91
