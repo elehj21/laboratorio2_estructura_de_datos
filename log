@@ -29,3 +29,14 @@ list.c:55:5: error: ‘else’ without a previous ‘if’
    55 |     else return NULL;
       |     ^~~~
 469b65a
+Fri Mar 27 12:50:12 AM UTC 2026: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:60:1: error: control reaches end of non-void function [-Werror=return-type]
+   60 | }
+      | ^
+cc1: all warnings being treated as errors
+2e07fa6

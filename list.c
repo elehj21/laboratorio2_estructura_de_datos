@@ -51,8 +51,11 @@ void * firstList(List * list) {
             return dato;
         }
     }
-    list->current = NULL;
-    else return NULL;
+    else
+    {
+        list->current = NULL;
+        return NULL;
+    }
     
 }
 
