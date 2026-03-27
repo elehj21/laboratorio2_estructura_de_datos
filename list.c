@@ -50,13 +50,9 @@ void * firstList(List * list) {
             list->current = list->head;
             return dato;
         }
+        else return NULL;
     }
-    else
-    {
-        list->current = NULL;
-        return NULL;
-    }
-    
+    else return NULL;
 }
 
 void * nextList(List * list) {

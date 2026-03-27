@@ -40,3 +40,9 @@ list.c:60:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 2e07fa6
+Fri Mar 27 12:54:41 AM UTC 2026: 
+ list.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+ tests:  2|5
+total_score: 15/60
+bfcb03c
