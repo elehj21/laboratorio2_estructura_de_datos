@@ -88,6 +88,17 @@ void * lastList(List * list){
 }
 
 void * prevList(List * list) {
+    if(list!=NULL){
+        if(list->current != NULL){
+            if(list->current->prev != NULL){
+                list->current = list->current->prev;
+                void* C = list->current->data;
+                return C;
+            }
+            else return NULL;
+        }
+        else return NULL;
+    }
     return NULL;
 }
 
