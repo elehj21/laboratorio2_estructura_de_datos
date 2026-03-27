@@ -168,8 +168,7 @@ void * popCurrent(List * list) {
     izq->next = der;
     der->prev = izq;
     free(list->current);
-    list->current = NULL;
-    return NULL;
+    list->current = der;
 }
 
 void cleanList(List * list) {
