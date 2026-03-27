@@ -46,3 +46,21 @@ Fri Mar 27 12:54:41 AM UTC 2026:
  tests:  2|5
 total_score: 15/60
 bfcb03c
+Fri Mar 27 12:58:02 AM UTC 2026: 
+ list.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:62:14: error: expected expression before ‘void’
+   62 |             *void dato = list->current->data;
+      |              ^~~~
+list.c:63:20: error: ‘dato’ undeclared (first use in this function)
+   63 |             return dato;
+      |                    ^~~~
+list.c:63:20: note: each undeclared identifier is reported only once for each function it appears in
+list.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+   68 | }
+      | ^
+cc1: all warnings being treated as errors
+f14b8ca
