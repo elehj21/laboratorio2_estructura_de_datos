@@ -183,6 +183,7 @@ void * popCurrent(List * list) {
         }
         list->current = der;
         return dato;
+    }
             
 }
 
