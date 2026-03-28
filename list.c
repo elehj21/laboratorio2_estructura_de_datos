@@ -75,6 +75,7 @@ void * nextList(List * list) {
 //   - La segunda función retorna el dato del nodo anterior a current y actualiza el current para que apunte a ese nodo.
 
 void * lastList(List * list){
+    if(list == NULL) return NULL;
     while(list->current != NULL){
         if(list->current->next == NULL)
         {
@@ -129,6 +130,7 @@ void pushBack(List * list, void * data) {
 // 5. Programe la función void pushCurrent(List * list, void* data), la cual agrega un dato a continuación del nodo apuntado por list->current.
 
 void pushCurrent(List * list, void * data) {
+    if(list == NULL) return NULL;
     Node* newNodo = createNode(data);
     if(list->current != NULL)
     {
@@ -143,8 +145,7 @@ void pushCurrent(List * list, void * data) {
              newNodo->next = list->current->next;
              newNodo->prev->next = newNodo;
              newNodo->next->prev = newNodo;
-        }
-        
+        }   
     }
     list->current = newNodo;
 }
